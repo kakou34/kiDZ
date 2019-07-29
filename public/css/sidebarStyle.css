@@ -1,0 +1,50 @@
+/*when the menu is hidden*/
+#sidebar-wrapper{
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #3490dc;
+}
+#page-content-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/*when the menu is displayed*/
+#app.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+#app.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+
+/*side-bar styling*/
+.sidebar-nav ul{
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li{
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav li a{
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.sidebar-nav li a:hover{
+    background-color: #227dc7;
+}
+.sidebar-nav .dropdown-menu{
+    background-color: #1b4b72;
+}
+
+#logo{
+    border-radius: 50%;
+}
